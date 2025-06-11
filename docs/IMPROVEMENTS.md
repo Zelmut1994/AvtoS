@@ -11,7 +11,7 @@
 - Переименовать поле `model` в `Part` во избежание коллизии.
 
 ## 2. Инфраструктура и сборка
-- Добавить GitHub Actions для CI (lint + tests + build).
+- [x] Добавить GitHub Actions для CI (lint + tests + build).
 - Перевести QSS-стили в ресурс-файл (`.qrc`).
 - Улучшить `build.py`: выбирать тему и иконку.
 
