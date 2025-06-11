@@ -1,0 +1,81 @@
+/* Стили кнопок */
+
+QPushButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #42A5F5, stop: 0.5 #2196F3, stop: 1 #1E88E5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 9pt;
+    min-width: 90px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #64B5F6, stop: 0.5 #42A5F5, stop: 1 #2196F3);
+    /* Убрали transform - заменили на изменение фона */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #1976D2, stop: 0.5 #1565C0, stop: 1 #0D47A1);
+    /* Убрали transform - используем изменение фона для эффекта нажатия */
+}
+
+QPushButton:disabled {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #f5f5f5, stop: 1 #e0e0e0);
+    color: #9e9e9e;
+}
+
+/* Кнопки успеха */
+QPushButton[styleClass="success"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #66BB6A, stop: 0.5 #4CAF50, stop: 1 #43A047);
+}
+
+QPushButton[styleClass="success"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #81C784, stop: 0.5 #66BB6A, stop: 1 #4CAF50);
+}
+
+/* Кнопки предупреждения */
+QPushButton[styleClass="warning"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #FFB74D, stop: 0.5 #FFA726, stop: 1 #FF9800);
+}
+
+QPushButton[styleClass="warning"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #FFCC02, stop: 0.5 #FFB74D, stop: 1 #FFA726);
+}
+
+/* Кнопки опасности */
+QPushButton[styleClass="danger"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #EF5350, stop: 0.5 #F44336, stop: 1 #E53935);
+}
+
+QPushButton[styleClass="danger"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #FF5722, stop: 0.5 #EF5350, stop: 1 #F44336);
+}
+
+/* Большие кнопки */
+QPushButton[styleClass="large"] {
+    padding: 15px 30px;
+    font-size: 11pt;
+    font-weight: 600;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+/* Маленькие кнопки */
+QPushButton[styleClass="small"] {
+    padding: 6px 12px;
+    font-size: 8pt;
+    min-width: 50px;
+    border-radius: 6px;
+} 

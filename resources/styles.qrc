@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RCC>
+    <qresource prefix="/styles">
+        <file>styles/main.qss</file>
+        <file>styles/tabs.qss</file>
+        <file>styles/buttons.qss</file>
+        <file>styles/tables.qss</file>
+        <file>styles/forms.qss</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/parts.svg</file>
+        <file>icons/sales.svg</file>
+        <file>icons/reports.svg</file>
+        <file>icons/search.svg</file>
+        <file>icons/add.svg</file>
+        <file>icons/edit.svg</file>
+        <file>icons/delete.svg</file>
+        <file>icons/save.svg</file>
+        <file>icons/cart.svg</file>
+        <file>icons/refresh.svg</file>
+    </qresource>
+</RCC> 
