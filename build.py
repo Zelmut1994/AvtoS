@@ -10,6 +10,7 @@ import zipfile
 from datetime import datetime
 import glob
 import platform
+import xml.etree.ElementTree as ET
 
 def check_requirements():
     """Проверка всех требований перед сборкой"""
@@ -58,13 +59,52 @@ def check_requirements():
         errors.append("❌ Файл src/full_app.py не найден")
     else:
         print("✅ Исходный файл найден")
+
+    # Проверяем ресурсы
+    if not check_resources():
+        errors.append("❌ Проблемы с ресурсами")
     
     if errors:
         print("\n⛔ Обнаружены проблемы:")
         for error in errors:
             print(error)
         return False
-    
+
+    return True
+
+def check_resources():
+    """Проверить наличие всех ресурсов"""
+    print("\n🔍 Проверка ресурсов (иконок и стилей)...")
+
+    qrc_path = os.path.join("resources", "styles.qrc")
+    compiled_rc = os.path.join("src", "resources_rc.py")
+
+    if not os.path.exists(qrc_path):
+        print(f"❌ Файл ресурсов не найден: {qrc_path}")
+        return False
+
+    missing = []
+    tree = ET.parse(qrc_path)
+    root = tree.getroot()
+    for file_elem in root.findall(".//file"):
+        rel_path = os.path.join("resources", file_elem.text)
+        if os.path.exists(rel_path):
+            print(f"✅ {rel_path}")
+        else:
+            missing.append(rel_path)
+
+    if missing:
+        print("\n⚠️ Отсутствуют ресурсы:")
+        for path in missing:
+            print(f" - {path}")
+        return False
+
+    if not os.path.exists(compiled_rc):
+        print(f"❌ Не найден скомпилированный файл ресурсов: {compiled_rc}")
+        print("   Запустите scripts/compile_resources.py и повторите сборку")
+        return False
+
+    print("✅ Все ресурсы на месте")
     return True
 
 def clean_build_artifacts():
