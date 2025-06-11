@@ -11,9 +11,9 @@ authors = [
 ]
 dependencies = [
     "PySide6==6.6.1",
+    "PySide6-Addons==6.6.1",
     "peewee==3.17.0",
-    "PyInstaller==6.3.0",
-    "typing-extensions==4.8.0"
+    "PyInstaller==6.3.0"
 ]
 
 [project.optional-dependencies]
