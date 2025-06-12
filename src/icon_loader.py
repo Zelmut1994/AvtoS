@@ -1,8 +1,3 @@
-diff --git a/src/icon_loader.py b/src/icon_loader.py
-index cd12b703e93772359ae9fcf7e7c1773cce3683a1..31b69f752eb62d6227854d14ae5ca710937f550c 100644
---- a/src/icon_loader.py
-+++ b/src/icon_loader.py
-@@ -1,41 +1,79 @@
 -"""
 -Загрузчик SVG иконок
 -"""
