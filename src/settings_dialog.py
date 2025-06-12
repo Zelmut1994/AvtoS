@@ -1,8 +1,3 @@
-diff --git a/src/settings_dialog.py b/src/settings_dialog.py
-index 2d7e0dea7acb29498def2cf5e76b99b34cb6025a..24616a5df6fb7c38d296aaf93c05f158d64b6d5c 100644
---- a/src/settings_dialog.py
-+++ b/src/settings_dialog.py
-@@ -1,52 +1,51 @@
  """
  Диалог настроек приложения
  """
