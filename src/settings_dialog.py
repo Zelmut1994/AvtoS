@@ -15,8 +15,7 @@
  from settings_manager import get_settings
  from modern_widgets import ModernButton, ModernGroupBox
  from ui_utils import apply_modern_styling
--from simple_icon_loader import SimpleIconLoader
-+
+
  
  
  class SettingsDialog(QDialog):
@@ -24,9 +23,7 @@
      
      def __init__(self, parent=None):
          super().__init__(parent)
--        self.settings = get_settings()
--        self.icon_loader = SimpleIconLoader()
-+        self.settings = get_settings()
+         self.settings = get_settings()
          self.init_ui()
          self.load_settings()
          self.setModal(True)
