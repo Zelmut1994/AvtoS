@@ -70,5 +70,4 @@ index 866597c4ebddf6e110dc15bb572c1fb715b134e5..f6295e3ab2cf7db672452df8b4353a5b
  python_files = ["test_*.py", "*_test.py"]
  python_classes = ["Test*"]
  python_functions = ["test_*"]
--addopts = "-v --tb=short" 
-+addopts = "-v --tb=short" 
+ addopts = "-v --tb=short" 
