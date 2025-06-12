@@ -1,8 +1,3 @@
-diff --git a//dev/null b/src/parts_dialogs.py
-index 0000000000000000000000000000000000000000..b79c7755ccd143369843f9fc3b431ec9d6ab0f9c 100644
---- a//dev/null
-+++ b/src/parts_dialogs.py
-@@ -0,0 +1,313 @@
 +from __future__ import annotations
 +
 +from PySide6.QtWidgets import (
