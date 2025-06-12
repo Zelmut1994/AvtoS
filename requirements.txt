@@ -1,20 +1,24 @@
 # Основные зависимости GUI
-PySide6==6.6.1
-PySide6-Addons==6.6.1
-
-# База данных ORM
-peewee==3.17.0
-
-# Сборка в исполняемый файл
-PyInstaller==6.3.0
-
-# Инструменты разработки и качества кода
-pytest==7.4.3
-pytest-qt==4.2.0
-mypy==1.7.1
-ruff==0.1.6
-black==23.11.0
-
-# Типы для mypy
-types-setuptools==68.2.0.2
-
+ PySide6==6.6.1
+ PySide6-Addons==6.6.1
+ 
+ # База данных ORM
+ peewee==3.17.0
+ 
+ # Сборка в исполняемый файл
+ PyInstaller==6.3.0
+ 
+ # Инструменты разработки и качества кода
+ pytest==7.4.3
+ pytest-qt==4.2.0
+ mypy==1.7.1
+ ruff==0.1.6
+ black==23.11.0
+ 
+ # Типы для mypy
+-types-setuptools==68.2.0.2
+-
+-# Дополнительные утилиты
+-typing-extensions==4.8.0 
++types-setuptools==68.2.0.2
++
